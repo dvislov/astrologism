@@ -426,3 +426,16 @@ th {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+.page {
+  background: url("../images/background.jpg") center top #050c13;
+  color: #fff;
+}
+.page-content {
+  max-width: 720px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15%;
+}
