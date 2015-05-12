@@ -451,6 +451,16 @@ html {
   display: block;
   margin: 0 0 8px;
 }
+.form-input {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
+  color: #fff;
+  background: none;
+}
+.form-input,
 .custom-select {
   display: block;
   width: 100%;
@@ -469,6 +479,9 @@ html {
   height: 100%;
   font-size: 0.875rem;
   line-height: 1.625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .btn {
   color: #05142d;
