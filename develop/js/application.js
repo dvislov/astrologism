@@ -1,6 +1,6 @@
 (function() {
   $(function() {
-    return console.log("Test");
+    return $('.custom-select').customSelect();
   });
 
 }).call(this);

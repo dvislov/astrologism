@@ -1,2 +1,2 @@
 $ ->
-  console.log "Test"
+  $('.custom-select').customSelect();

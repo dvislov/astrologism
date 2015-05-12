@@ -6,6 +6,47 @@ html
 
     .page-content
 
-      button.btn(type="submit") Составить
+      form
+        .form-group
+        .form-group
+
+        .form-group
+          label.form-label Дата рождения:
+
+        .form-group
+          label.form-label Время рождения:
+
+        .form-group
+          label.form-label Место рождения:
+          select.custom-select(name="")
+            option(value="") Страна
+            option(value="") Россия
+            option(value="") Уганда
+          select.custom-select(name="")
+            option(value="") Область
+            option(value="") Ивановская
+            option(value="") Чернобыльская
+          select.custom-select(name="")
+            option(value="") Город
+            option(value="") Урюпинск
+            option(value="") Актюбинск
+
+        .form-group
+          label.form-label Где вы находитесь сейчас:
+          select.custom-select(name="")
+            option(value="") Страна
+            option(value="") Россия
+            option(value="") Уганда
+          select.custom-select(name="")
+            option(value="") Область
+            option(value="") Ивановская
+            option(value="") Чернобыльская
+          select.custom-select(name="")
+            option(value="") Город
+            option(value="") Урюпинск
+            option(value="") Актюбинск
+
+        .form-group
+          button.btn(type="submit") Составить
 
     include shared/footer
