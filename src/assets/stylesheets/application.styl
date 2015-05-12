@@ -129,6 +129,60 @@ html
 .custom-checkbox-input:checked + .custom-checkbox-label::before
   background #fff
 
+
+.sex-group
+  font-size 0.75rem
+  padding 6px 0 0 15px
+
+.sex-group-label
+  display inline-block
+  vertical-align middle
+  margin-right 15px
+  position relative
+  top -1px
+  & + .custom-radio
+    margin-right 20px
+
+.custom-radio
+  display inline-block
+  vertical-align middle
+
+.custom-radio-input
+  display none
+
+.custom-radio-label::before
+  margin-right 4px
+
+.custom-radio-input-male + .custom-radio-label::before
+  background url(../images/icon-male.png) 0 0 no-repeat
+  display inline-block
+  vertical-align middle
+  width 15px
+  height 16px
+  background-size 15px 16px
+  content ''
+  position relative
+  top -3px
+
+.custom-radio-input-female + .custom-radio-label::before
+  background url(../images/icon-female.png) 0 0 no-repeat
+  display inline-block
+  vertical-align middle
+  width 12px
+  height 19px
+  content ''
+  background-size 12px 19px
+  position relative
+  top 4px
+
+.custom-radio-input + .custom-radio-label,
+.custom-radio-input + .custom-radio-label::before
+  opacity 0.4
+
+.custom-radio-input:checked + .custom-radio-label
+.custom-radio-input:checked + .custom-radio-label::before
+  opacity 1
+
 .btn
   color #05142D
   font-size 1.16rem

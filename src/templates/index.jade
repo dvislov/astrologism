@@ -9,6 +9,15 @@ html
       form
         .form-group
           input.form-input(type="text", placeholder="Имя")
+          .sex-group
+            .sex-group-label Пол:
+            .custom-radio
+              input.custom-radio-input.custom-radio-input-male(type="radio", name="sex", id="male", checked)
+              label.custom-radio-label(for="male") мужской
+            .custom-radio
+              input.custom-radio-input.custom-radio-input-female(type="radio", name="sex", id="female")
+              label.custom-radio-label(for="female") женский
+
         .form-group
           input.form-input(type="email", placeholder="E-mail")
 
