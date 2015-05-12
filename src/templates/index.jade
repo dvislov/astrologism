@@ -31,8 +31,18 @@ html
                 option(value="") 1981
                 option(value="") 1982
 
-        .form-group
+        .form-group.date-select
           label.form-label Время рождения:
+          .date-selects
+            .date-select-time
+              select.custom-select(name="")
+                option(value="") 23:00
+                option(value="") 23:05
+                option(value="") 23:10
+
+            .custom-checkbox
+              input.custom-checkbox-input(type="checkbox", id="forget")
+              label.custom-checkbox-label(for="forget") не знаю
 
         .form-group.simple-select
           label.form-label Место рождения:

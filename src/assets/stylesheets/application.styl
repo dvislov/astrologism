@@ -76,6 +76,11 @@ html
   &-year
     width 56px
     display inline-block
+  &-time
+    width 60px
+    display inline-block
+    vertical-align middle
+    margin-right 20px
 
 .date-select
   .custom-select
@@ -100,6 +105,29 @@ html
     white-space nowrap
     text-overflow ellipsis
 
+.custom-checkbox
+  display inline-block
+  vertical-align middle
+
+.custom-checkbox-input
+  display none
+
+.custom-checkbox-label
+  font-size 0.75rem
+
+.custom-checkbox-input + .custom-checkbox-label::before
+  display inline-block
+  vertical-align middle
+  margin 0 6px 0 0
+  content ''
+  width 8px
+  height 8px
+  border-radius 8px
+  border 4px solid #364456
+  background #364456
+
+.custom-checkbox-input:checked + .custom-checkbox-label::before
+  background #fff
 
 .btn
   color #05142D
