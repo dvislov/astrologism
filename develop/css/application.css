@@ -444,6 +444,9 @@ html {
 .form-group {
   margin: 0 0 30px;
 }
+.form-group-type-near {
+  margin: 0 0 22px;
+}
 .form-label {
   font-size: 0.875rem;
   font-weight: 400;
@@ -459,26 +462,66 @@ html {
   line-height: 1.625rem;
   color: #fff;
   background: none;
-}
-.form-input,
-.custom-select {
   display: block;
   width: 100%;
   height: 30px;
   margin: 0 0 8px;
 }
-.customSelect {
+.simple-select .custom-select {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0 0 8px;
+}
+.simple-select .customSelect {
   border: 2px solid #fff;
   border-radius: 15px;
   padding: 0 30px 0 15px;
   background: url("../svg/select-arrow.svg") 198px 10px no-repeat;
 }
-.customSelectInner {
+.simple-select .customSelectInner {
   display: block;
   width: 100%;
   height: 100%;
   font-size: 0.875rem;
   line-height: 1.625rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.date-selects {
+  text-align: center;
+}
+.date-select-day {
+  width: 36px;
+  display: inline-block;
+}
+.date-select-month {
+  width: 120px;
+  display: inline-block;
+}
+.date-select-year {
+  width: 56px;
+  display: inline-block;
+}
+.date-select .custom-select {
+  width: 100%;
+  display: inline-block;
+  height: 30px;
+}
+.date-select .customSelect {
+  border: 1px solid #50657f;
+  border-radius: 3px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.2);
+}
+.date-select .customSelectInner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
