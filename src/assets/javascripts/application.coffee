@@ -8,11 +8,13 @@ $('#zodiac_day, #zodiac_month').change ->
 setZodiacLogo = ->
   zodiacName = 'default'
 
-  dayNum = $('#zodiac_day').find("option:selected").val()
-  monthNum = $('#zodiac_month').find("option:selected").val()
-  yearNum = $('#zodiac_year').find("option:selected").val()
+  dayNum = $('#zodiac_day').val()
+  monthNum = $('#zodiac_month').val()
+  yearNum = $('#zodiac_year').val()
 
   zodiacDate = new Date(monthNum + '/' + dayNum + '/' + yearNum)
+
+  console.log yearNum
 
   if (zodiacDate >= new Date('03/21/' + yearNum) && zodiacDate <= new Date('04/20/' + yearNum))
     zodiacName = 'aries'
