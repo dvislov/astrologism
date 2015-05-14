@@ -593,6 +593,10 @@ html {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.simple-select option,
+.date-select option {
+  color: #000;
+}
 .custom-checkbox {
   display: inline-block;
   vertical-align: middle;
